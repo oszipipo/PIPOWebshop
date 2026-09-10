@@ -113,25 +113,6 @@ body::after{
   padding:18px 0;
 }
 
-.logo{
-  font-family: var(--font-display);
-  font-size: 32px;
-  font-weight: 900;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-.logo::before{
-  display: none;   /* teljesen eltünteti az ikont */
-}
-
-.logo span{
-  background: linear-gradient(90deg,#7B2FFF,#00F7FF,#FF00C8,#7CFF5B);
-  background-size: 300%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: rgbText 6s linear infinite;
-}
 
 .tagline{
   color:var(--text-dim);

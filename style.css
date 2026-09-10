@@ -114,37 +114,23 @@ body::after{
 }
 
 .logo{
-  display:flex;
-  align-items:center;
-  gap:14px;
-  font-family:var(--font-display);
-  font-size:32px;
-  font-weight:800;
-  letter-spacing:2px;
-  text-transform:uppercase;
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .logo::before{
-  content:"P";
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  width:48px;
-  height:48px;
-  border-radius:14px;
-  background:linear-gradient(135deg,var(--rgb1),var(--rgb2),var(--rgb3));
-  color:white;
-  font-weight:900;
-  box-shadow:0 0 20px var(--rgb2),0 0 40px var(--rgb3);
-  animation:iconFloat 3s ease-in-out infinite;
+  display: none;   /* teljesen eltünteti az ikont */
 }
 
 .logo span{
-  background:linear-gradient(90deg,var(--rgb2),var(--rgb3),var(--rgb4));
-  background-size:300%;
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
-  animation:rgbText 5s linear infinite;
+  background: linear-gradient(90deg,#7B2FFF,#00F7FF,#FF00C8,#7CFF5B);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rgbText 6s linear infinite;
 }
 
 .tagline{

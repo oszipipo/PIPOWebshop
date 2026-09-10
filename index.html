@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PIPO — good stuff, found for you</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <span class="logo">PIPO</span>
+    <p class="tagline">Good stuff, found for you.</p>
+  </div>
+</header>
+
+<main>
+  <section class="hero wrap">
+    <h1>Things worth<br>clicking twice.</h1>
+    <p class="hero-sub">A small, hand-picked shelf of objects we actually use. Tap anything for the full story — and the way to get it.</p>
+  </section>
+
+  <section class="grid wrap" id="product-grid" aria-label="Products">
+    <!-- Product cards are inserted here by app.js -->
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="footer-line">PIPO — a small shop of good finds.</p>
+    <p class="disclosure">As an Amazon Associate I earn from qualifying purchases.</p>
+  </div>
+</footer>
+
+<!-- Product detail overlay -->
+<div class="detail-overlay" id="detail-overlay" hidden>
+  <div class="detail-card" role="dialog" aria-modal="true" aria-labelledby="detail-name">
+    <button class="detail-close" id="detail-close" aria-label="Close">✕</button>
+    <div class="detail-image-wrap">
+      <img id="detail-image" src="" alt="">
+    </div>
+    <div class="detail-body">
+      <p class="detail-price" id="detail-price"></p>
+      <h2 id="detail-name"></h2>
+      <p class="detail-desc" id="detail-desc"></p>
+      <a class="buy-button" id="buy-button" href="#" target="_blank" rel="noopener sponsored">
+        <span>Buy now</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<script src="products.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

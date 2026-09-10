@@ -448,3 +448,53 @@ body::after{
     transition:none!important;
   }
 }
+/* ===== PIPO NAVBAR ===== */
+
+.nav{
+  display:flex;
+  gap:28px;
+  align-items:center;
+}
+
+.nav a{
+  text-decoration:none;
+  color:#fff;
+  font-weight:700;
+  letter-spacing:1px;
+  position:relative;
+  transition:.3s;
+}
+
+.nav a::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-6px;
+  width:0%;
+  height:2px;
+  border-radius:20px;
+  background:linear-gradient(90deg,#7B2FFF,#00F7FF,#FF00C8);
+  transition:.3s;
+}
+
+.nav a:hover{
+  color:#00F7FF;
+  text-shadow:0 0 10px #00F7FF;
+}
+
+.nav a:hover::after{
+  width:100%;
+}
+
+@media(max-width:768px){
+  .header-inner{
+    flex-direction:column;
+    gap:15px;
+  }
+
+  .nav{
+    gap:18px;
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+}
